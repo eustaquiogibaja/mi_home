@@ -8,7 +8,9 @@ try:
     data_ordenada = pd.read_csv(archivo_csv_ordenado)
     
     # Exportar a Excel
-    archivo_excel = 'clientes_ordenados.xlsx'
+    #archivo_excel = 'clientes_ordenados.xlsx'
+    archivo_excel = 'clientes_ordenados_1.xlsx'
+    
     data_ordenada.to_excel(archivo_excel, index=False)
     
     print(f"Datos exportados exitosamente a {archivo_excel}")
